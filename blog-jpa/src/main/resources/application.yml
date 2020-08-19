@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    encoding: utf-8
+    mode: HTML
+   # suffix: .html
+  #  prefix: classpath:/templates/
+  profiles:
+    active: cynosDB
+  # 服务模块
+  devtools:
+    restart:
+      # 热部署开关
+      enabled: true
+#默认头像
+comment.avatar: http://nina-191f93-1300880091.tcloudbaseapp.com/static/img/niu-2-3.jpg
+#项目创建日期
+comment.createProjectTime: 2020/08/15 12:00

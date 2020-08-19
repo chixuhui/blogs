@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--title 动态写入-->
+<head th:fragment="head(title)">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title th:replace="${title}">Blog</title>
+	<link href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet"/>
+	<link th:href="@{/css/me.css}" rel="stylesheet"/>
+	<link  th:href="@{/css/typo.css}" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link th:href="@{/lib/prism/prism.css}" rel="stylesheet"/>
+	<link th:href="@{/lib/tocbot/tocbot.css}"  rel="stylesheet"/>
+	<link  th:href="@{/lib/editormd/css/editormd.min.css}" rel="stylesheet"/>
+	<link Rel="icon" type="image/x-icon" th:href="@{/img/niu111ico.ico}"/>
+</head>
+
+<body>
+<!--导航  n为定义默认选择-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small m-nav-fixed m-opacity-tiny">
+	<div class="ui container">
+		<div class="ui inverted secondary stackable menu animated">
+			<div class="m-animate-pulse animate__animated animate__flip"><h2 class="ui teal header item"><a href="https://www.adheres.cn"><span style="font-size: 30px; font-family: '华文行楷'; ">Adheres</span></a></h2></div>
+			<a href="#" th:href="@{/}" class="item m-pink m-item m-mobile-hide m-animate-pulse" th:classappend="${n==1} ? 'active'"><i class="mini home icon"></i>&nbsp;&nbsp;首页</a>
+			<a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide m-animate-pulse" th:classappend="${n==2} ? 'active'"><i class="mini idea icon"></i>&nbsp;&nbsp;分类</a>
+			<a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide m-animate-pulse" th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>&nbsp;&nbsp;标签</a>
+			<a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide m-animate-pulse" th:classappend="${n==4} ? 'active'"><i class="mini clone icon"></i>&nbsp;&nbsp;归档</a>
+			<a href="#" th:href="@{/about}" class="m-item item m-mobile-hide m-animate-pulse" th:classappend="${n==5} ? 'active'"><i class="mini info icon"></i>&nbsp;关于我</a>
+			<div class="right m-item item m-mobile-hide">
+				<form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+					<div class="ui icon inverted transparent input m-margin-tb-tiny">
+						<input type="text" name="query" placeholder="Search...." th:value="${query}">
+						<i onclick="document.forms['search'].submit()" class="search link icon"></i>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+		<i class="sidebar icon"></i>
+	</a>
+</nav>
+<!--底部 footer-  inverted代表黑色-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-opacity-tiny" >
+	<div class="ui center aligned container">
+		<!--<div class="ui inverted divided center aligned  stackable grid">
+			<div class="three wide column">
+				<h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+				<div class="ui inverted link list">
+					<a href="#" class="item">Email:adheres@foxmail.com</a>
+					<a href="#" class="item">QQ:183453717</a>
+				</div>
+			</div>
+			<div class="three wide column">
+				<h4 class="ui inverted header m-text-thin m-text-spaced ">公众号</h4>
+				<div class="ui inverted link list">
+					<div class="item">
+						<img src="http://nina-191f93-1300880091.tcloudbaseapp.com/static/img/wechat.jpg"  class="ui rounded image" style="width:8em;height: 8em"/>
+					</div>
+				</div>
+			</div>
+			<div class="three wide column">
+				<h4 class="ui inverted header m-text-thin m-text-spaced ">微信</h4>
+				<div class="ui inverted link list">
+					<div class="item">
+						<img src="http://nina-191f93-1300880091.tcloudbaseapp.com/static/img/weixin.jpg"  class="ui rounded image" style="width:8em;height: 8em"/>
+					</div>
+				</div>
+			</div>
+			&lt;!&ndash;<div class="seven wide column">
+				<h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+				<p class="m-text-thin m-text-spaced m-opacity-mini">XXXXX</p>
+			</div>&ndash;&gt;
+		</div>
+		<div class="ui inverted section divider"></div>-->
+			<!--<label>Copyright © 2020 - 2020 UP Designed by Nina</label>
+		<p class="m-text-thin m-text-spaced">粤ICP备20061922号-1</p>-->
+		<p class="m-text-thin m-text-spaced">Copyright © 2020 - 2020 UP Designed by <a href="https://www.adheres.cn"><span class="m-animate-pulse animate__animated animate__flip" style="font-size: 30px; font-family: '华文行楷'; ">Nina</span></a> | 粤ICP备20061922号-1</p>
+		本站已运行：<span id="timeDate"></span><span id="times"></span>
+	</div>
+</footer>
+
+<th:block th:fragment="script">
+	<script th:href="@{/js/jquery3.4.1.main.js}"></script>
+	<script th:href="@{/semantic/semantic.min.js}"></script>
+	<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+	<script th:href="@{/lib/prism/prism.js}"></script>
+	<script th:href="@{/lib/tocbot/tocbot.js}"></script>
+	<script th:href="@{/lib/qrcode/qrcode.min.js}"></script>
+	<script th:href="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+	<script th:src="@{/lib/editormd/editormd.min.js}"></script>
+	<script th:src="@{/js/bj-2.js}"></script>
+</th:block>
+<script>
+	var now = new Date();
+	function createtime() {
+		var grt = new Date("08/15/2020 00:00:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+		now.setTime(now.getTime() + 250);
+		days = (now - grt) / 1000 / 60 / 60 / 24;
+		dnum = Math.floor(days);
+		hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+		hnum = Math.floor(hours);
+		if (String(hnum).length == 1) {
+			hnum = "0" + hnum;
+		}
+		minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+		mnum = Math.floor(minutes);
+		if (String(mnum).length == 1) {
+			mnum = "0" + mnum;
+		}
+		seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+		snum = Math.round(seconds);
+		if (String(snum).length == 1) {
+			snum = "0" + snum;
+		}
+		document.getElementById("timeDate").innerHTML = " " + dnum + " 天 ";
+		document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+	}
+	setInterval("createtime()", 500);
+</script>
+</body>
+
+</html>

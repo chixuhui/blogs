@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="include :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我页面</title>
+</head>
+
+<body>
+<canvas id="canvBrckgroud" class="m-canvas-absolute"></canvas>
+<!--导航 动态传入值-->
+<div th:replace="include :: menu(5)"></div>
+<!--中间部分-->
+<div  class="m-container m-mobile-hide m-padded-tb-big ">
+    <div class="ui container">
+
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+                <div class="ui segment">
+                  <img src="http://nina-191f93-1300880091.tcloudbaseapp.com/static/img/niu-2-93.jpg" alt="" class="ui rounded image">
+                </div>
+            </div>
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">关于我</div>
+                </div>
+                <div class="ui attached segment">
+                    <p class="m-text">*旭辉，折腾在 0 和 1 世界的大叔；一个终身学习者，誓将学习无限循环. 希望结识可以共同成长的大神.</p>
+                    <p class="m-text">热爱编程，喜欢折腾，正在探索高效学习编程技术的方法...</p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui orange basic left pointing label m-animate-pulse animate__animated animate__bounceIn">编程</div>
+                    <div class="ui orange basic left pointing label m-animate-pulse animate__animated animate__bounceIn">思考</div>
+                    <div class="ui orange basic left pointing label m-animate-pulse animate__animated animate__bounceIn">运动</div>
+                    <div class="ui orange basic left pointing label m-animate-pulse animate__animated animate__bounceIn">潜伏者</div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">Java</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">JavaScript</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">.Net</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">Android</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">小程序</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">MYSQL</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">ADF</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny m-animate-pulse animate__animated animate__bounceIn">...</div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <a href="https://github.com/chixuhui/blog" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#"  class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-content="183453717" data-position="bottom center"><i class="qq icon"></i></a>
+                </div>
+
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <img src="http://nina-191f93-1300880091.tcloudbaseapp.com/static/img/wechat.jpg"  class="ui rounded image" style="width:8em;height: 8em"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+
+<div th:replace="include :: footer"></div>
+<th:block th:replace="include :: script"></th:block>
+<!--底部 footer-  inverted代表黑色-->
+
+
+</body>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+       /* on: 'click',*/
+        position: 'bottom center'
+    })
+    $('.qq').popup();
+</script>
+</html>

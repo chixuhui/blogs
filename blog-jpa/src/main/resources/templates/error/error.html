@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="include :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR错误</title>
+</head>
+
+<body>
+<!--导航 动态传入值-->
+<div th:replace="include :: menu(7)"></div>
+
+<div class="main-content">
+    <div th:utext="'&lt;&#45;&#45;'" th:remove="tag"></div>
+    <div th:utext="'Failed Request URL : ' + ${url}" th:remove="tag"></div><br>
+    <div th:utext="'Exception message : ' + ${exception.message}" th:remove="tag"></div>
+    <ul th:remove="tag">
+        <li th:each="st : ${exception.stackTrace}" th:remove="tag"><span th:utext="${st}" th:remove="tag"></span></li>
+    </ul>
+    <div th:utext="'&#45;&#45;&gt;'" th:remove="tag"></div>
+</div>
+<!--底部 footer-->
+<div th:replace="include :: footer"></div>
+<th:block th:replace="include :: script"></th:block>
+</body>
+</html>

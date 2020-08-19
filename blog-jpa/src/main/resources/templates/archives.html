@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="include :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>归档</title>
+</head>
+
+<body>
+<canvas id="canvBrckgroud" class="m-canvas-absolute"></canvas>
+
+<!--导航-->
+<div th:replace="include :: menu(4)"></div>
+<!--中间部分-->
+<div class="m-container main-content m-padded-tb-big m-opacity-nine" style="height: 800px!important;">
+    <div class="ui container">
+        <!--header-->
+        <div class="ui top attached padded segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h3 class="ui teal header">归档</h3>
+                </div>
+                <div class="right aligned column">
+                    共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${blogCount}"> 114 </h2> 篇博客
+                </div>
+            </div>
+        </div>
+
+        <th:block th:each="item : ${archiveMap}">
+            <h3 class="ui center aligned header m-animate-pulse animate__animated animate__bounceIn" th:text="${item.key}">2017</h3>
+            <div class="ui fluid vertical menu">
+                <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item"
+                   th:each="blog : ${item.value}">
+          <span>
+            <i class="mini teal circle icon"></i>&nbsp;&nbsp;<span th:text="${blog.title}">关于刻意练习的清单</span>
+            <div class="ui teal basic left pointing label m-padded-mini "
+                 th:text="${#dates.format(blog.updateTime,'MMMdd')}">9月03</div>
+          </span>
+                    <div class="ui orange basic left pointing label m-padded-mini " th:text="${blog.flag}">原创</div>
+                </a>
+            </div>
+        </th:block>
+
+    </div>
+</div>
+<br>
+<!--底部 footer-  inverted代表黑色-->
+<div th:replace="include :: footer"></div>
+<th:block th:replace="include :: script"></th:block>
+</body>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
+</html>

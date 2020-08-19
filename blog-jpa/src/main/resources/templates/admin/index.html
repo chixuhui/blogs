@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/include :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+</head>
+<body>
+
+<!--导航 动态传入值-->
+<div th:replace="admin/include :: menu(5)"></div>
+<!--中间部分-->
+    <div class="m-container m-padded-tb-big m-opacity-nine">
+        <div class="ui container">
+            <div class="ui success large | message">
+                <h3>Hi,</h3>
+                <p>Mehow,欢迎登陆！</p>
+            </div>
+            <img src="http://nina-191f93-1300880091.tcloudbaseapp.com/static/img/niu-4-409.jpg"  alt="" class="ui rounded bordered fluid image" >
+        </div>
+    </div>
+<br>
+<!--底部 footer-->
+<div th:replace="admin/include :: footer"></div>
+<!--下面这种方法会自动识别，当在thymelef时执行对应的，静态html事执行对应的-->
+<!--/*/<th:block th:replace="admin/include :: script">/*/-->
+
+<!--/*/</th:block>/*/-->
+</body>
+
+<script>
+
+
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+</script>
+</html>

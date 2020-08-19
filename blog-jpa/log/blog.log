@@ -1,0 +1,1469 @@
+2020-08-19 08:36:32.402  INFO 11344 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 11344 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 08:36:32.405 DEBUG 11344 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 08:36:32.406  INFO 11344 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 08:36:32.442  INFO 11344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 08:36:32.443  INFO 11344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 08:36:34.602  INFO 11344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 08:36:34.700  INFO 11344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 5 JPA repository interfaces.
+2020-08-19 08:36:34.808  WARN 11344 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 08:36:35.361  INFO 11344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 08:36:35.387  INFO 11344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 08:36:35.387  INFO 11344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 08:36:35.466  INFO 11344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 08:36:35.466  INFO 11344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3023 ms
+2020-08-19 08:36:35.508  INFO 11344 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 08:36:35.591  INFO 11344 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 08:36:35.689  INFO 11344 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 08:36:35.740  INFO 11344 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 08:36:35.803  INFO 11344 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 08:36:35.876  WARN 11344 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 08:36:35.957  INFO 11344 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 08:36:36.120  INFO 11344 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 08:36:36.301  INFO 11344 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 08:36:36.535  INFO 11344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 08:36:36.579  INFO 11344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 08:36:36.580  INFO 11344 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 08:36:36.777  INFO 11344 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 08:36:36.778  INFO 11344 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 08:36:37.365  INFO 11344 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 08:36:37.370  INFO 11344 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 08:36:37.644  INFO 11344 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 866 ms
+2020-08-19 08:36:37.687  INFO 11344 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@7ec183ee]}
+2020-08-19 08:36:37.688  INFO 11344 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 08:36:38.009  INFO 11344 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 08:36:38.015  INFO 11344 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 6.232 seconds (JVM running for 7.445)
+2020-08-19 08:36:38.203  WARN 11344 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 08:36:38.223  WARN 11344 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 08:36:38.250  INFO 11344 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 08:36:38.250  INFO 11344 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 08:36:53.243  INFO 11344 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@7ec183ee]}
+2020-08-19 08:36:53.243  INFO 11344 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 08:36:53.467  INFO 11344 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 08:36:53.468  INFO 11344 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 08:56:06.710  INFO 11344 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 08:56:06.710  INFO 11344 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 08:56:08.001  INFO 11344 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 08:56:08.001  INFO 11344 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:31:17.300  INFO 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 17004 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:31:17.304 DEBUG 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:31:17.305  INFO 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:31:17.346  INFO 17004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 10:31:17.346  INFO 17004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 10:31:18.867  INFO 17004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:31:18.917  INFO 17004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 5 JPA repository interfaces.
+2020-08-19 10:31:18.992  WARN 17004 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:31:19.441  INFO 17004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:31:19.447  INFO 17004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:31:19.448  INFO 17004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:31:19.567  INFO 17004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:31:19.567  INFO 17004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2221 ms
+2020-08-19 10:31:19.609  INFO 17004 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:31:19.701  INFO 17004 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 10:31:19.790  INFO 17004 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:31:19.826  INFO 17004 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:31:19.856  INFO 17004 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 10:31:19.960  INFO 17004 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 10:31:19.974  WARN 17004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:31:20.217  INFO 17004 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:31:20.268  INFO 17004 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:31:20.544  INFO 17004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:31:20.585  INFO 17004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:31:20.587  INFO 17004 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:31:21.198  INFO 17004 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:31:21.203  INFO 17004 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:31:21.711  INFO 17004 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:31:21.718  INFO 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.858 seconds (JVM running for 5.572)
+2020-08-19 10:31:25.869  INFO 17004 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 10:31:25.869  INFO 17004 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 10:31:25.878  INFO 17004 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-08-19 10:34:43.298  INFO 17004 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:34:43.300  INFO 17004 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:34:43.303  INFO 17004 --- [Thread-12] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-08-19 10:34:43.577  INFO 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 17004 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:34:43.577 DEBUG 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:34:43.577  INFO 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:34:44.658  INFO 17004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:34:44.712  INFO 17004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 5 JPA repository interfaces.
+2020-08-19 10:34:44.762  WARN 17004 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:34:44.893  INFO 17004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:34:44.894  INFO 17004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:34:44.894  INFO 17004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:34:44.907  INFO 17004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:34:44.907  INFO 17004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1327 ms
+2020-08-19 10:34:44.922  INFO 17004 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:34:44.946  INFO 17004 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-08-19 10:34:45.023  INFO 17004 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:34:45.034  INFO 17004 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:34:45.136  WARN 17004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:34:45.156  INFO 17004 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:34:45.297  INFO 17004 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:34:45.519  INFO 17004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:34:45.534  INFO 17004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:34:45.535  INFO 17004 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:34:45.584  INFO 17004 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:34:45.584  INFO 17004 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:34:45.794  INFO 17004 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:34:45.798  INFO 17004 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 2.281 seconds (JVM running for 209.645)
+2020-08-19 10:34:45.800  INFO 17004 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-19 10:35:05.023  INFO 6400 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 6400 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:35:05.025 DEBUG 6400 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:35:05.025  INFO 6400 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:35:05.062  INFO 6400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 10:35:05.063  INFO 6400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 10:35:06.422  INFO 6400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:35:06.477  INFO 6400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 5 JPA repository interfaces.
+2020-08-19 10:35:06.584  WARN 6400 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:35:07.025  INFO 6400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:35:07.075  INFO 6400 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:35:07.075  INFO 6400 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:35:07.145  INFO 6400 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:35:07.145  INFO 6400 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2082 ms
+2020-08-19 10:35:07.189  INFO 6400 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:35:07.285  INFO 6400 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 10:35:07.374  INFO 6400 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:35:07.415  INFO 6400 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:35:07.455  INFO 6400 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 10:35:07.561  INFO 6400 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 10:35:07.573  WARN 6400 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:35:07.814  INFO 6400 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:35:07.840  INFO 6400 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:35:08.171  INFO 6400 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:35:08.212  INFO 6400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:35:08.213  INFO 6400 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:35:08.725  INFO 6400 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:35:08.730  INFO 6400 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:35:09.295  INFO 6400 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:35:09.302  INFO 6400 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.697 seconds (JVM running for 5.403)
+2020-08-19 10:35:28.464  INFO 6400 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 10:35:28.464  INFO 6400 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 10:35:28.472  INFO 6400 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-08-19 10:39:32.588  INFO 3468 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 3468 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:39:32.590 DEBUG 3468 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:39:32.590  INFO 3468 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:39:32.625  INFO 3468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 10:39:32.625  INFO 3468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 10:39:34.033  INFO 3468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:39:34.081  INFO 3468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 5 JPA repository interfaces.
+2020-08-19 10:39:34.155  WARN 3468 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:39:34.601  INFO 3468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:39:34.609  INFO 3468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:39:34.609  INFO 3468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:39:34.732  INFO 3468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:39:34.732  INFO 3468 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2107 ms
+2020-08-19 10:39:34.776  INFO 3468 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:39:34.876  INFO 3468 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 10:39:34.965  INFO 3468 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:39:34.998  INFO 3468 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:39:35.029  INFO 3468 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 10:39:35.113  INFO 3468 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 10:39:35.119  WARN 3468 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:39:35.351  INFO 3468 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:39:35.377  INFO 3468 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:39:35.683  INFO 3468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:39:35.724  INFO 3468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:39:35.725  INFO 3468 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:39:36.300  INFO 3468 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:39:36.306  INFO 3468 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:39:36.848  INFO 3468 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:39:36.855  INFO 3468 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.704 seconds (JVM running for 5.499)
+2020-08-19 10:39:43.571  INFO 3468 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 10:39:43.571  INFO 3468 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 10:39:43.580  INFO 3468 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-08-19 10:42:27.748 ERROR 3468 --- [http-nio-80-exec-7] c.m.b.h.ControllerExecptionHandler       : Requst URL : http://localhost/admin/blogs，Exception : {}
+
+java.lang.NullPointerException: null
+	at com.mehow.blog.controller.admin.BlogController.post(BlogController.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-08-19 10:42:27.749  WARN 3468 --- [http-nio-80-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2020-08-19 10:44:54.202 ERROR 3468 --- [http-nio-80-exec-6] c.m.b.h.ControllerExecptionHandler       : Requst URL : http://localhost/admin/blogs/71/delete，Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:213)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:422)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:395)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-08-19 10:44:54.203  WARN 3468 --- [http-nio-80-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-08-19 10:45:48.660  INFO 13804 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 13804 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:45:48.663 DEBUG 13804 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:45:48.664  INFO 13804 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:45:48.737  INFO 13804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 10:45:48.737  INFO 13804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 10:45:50.133  INFO 13804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:45:50.185  INFO 13804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 5 JPA repository interfaces.
+2020-08-19 10:45:50.266  WARN 13804 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:45:50.694  INFO 13804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:45:50.701  INFO 13804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:45:50.701  INFO 13804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:45:50.821  INFO 13804 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:45:50.822  INFO 13804 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2084 ms
+2020-08-19 10:45:50.865  INFO 13804 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:45:50.957  INFO 13804 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 10:45:51.044  INFO 13804 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:45:51.077  INFO 13804 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:45:51.109  INFO 13804 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 10:45:51.192  INFO 13804 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 10:45:51.198  WARN 13804 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:45:51.434  INFO 13804 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:45:51.483  INFO 13804 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:45:51.764  INFO 13804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:45:51.803  INFO 13804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:45:51.805  INFO 13804 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:45:52.397  INFO 13804 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:45:52.402  INFO 13804 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:45:52.916  INFO 13804 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:45:52.924  INFO 13804 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.661 seconds (JVM running for 5.39)
+2020-08-19 10:45:58.274  INFO 13804 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 10:45:58.274  INFO 13804 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 10:45:58.281  INFO 13804 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-08-19 10:46:04.029 ERROR 13804 --- [http-nio-80-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-80-exec-5] Exception processing template "admin/blogs::[blogList]": An error happened during template parsing (template: "class path resource [templates/admin/blogs.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/blogs.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "page.content" (template: "admin/blogs" - line 107, col 21)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "page.content" (template: "admin/blogs" - line 107, col 21)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleOpenElementEnd(BlockSelectorMarkupHandler.java:996)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'content' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 71 common frames omitted
+
+2020-08-19 10:46:04.031 ERROR 13804 --- [http-nio-80-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/blogs.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'content' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleOpenElementEnd(BlockSelectorMarkupHandler.java:996)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-08-19 10:53:22.930  INFO 9784 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 9784 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:53:22.932 DEBUG 9784 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:53:22.932  INFO 9784 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:53:22.978  INFO 9784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 10:53:22.978  INFO 9784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 10:53:24.358  INFO 9784 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:53:24.426  INFO 9784 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 5 JPA repository interfaces.
+2020-08-19 10:53:24.499  WARN 9784 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:53:24.936  INFO 9784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:53:24.983  INFO 9784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:53:24.983  INFO 9784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:53:25.047  INFO 9784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:53:25.047  INFO 9784 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2020-08-19 10:53:25.091  INFO 9784 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:53:25.181  INFO 9784 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 10:53:25.270  INFO 9784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:53:25.302  INFO 9784 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:53:25.334  INFO 9784 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 10:53:25.413  INFO 9784 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 10:53:25.421  WARN 9784 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:53:25.655  INFO 9784 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:53:25.672  INFO 9784 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:53:25.986  INFO 9784 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:53:26.022  INFO 9784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:53:26.023  INFO 9784 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:53:26.515  INFO 9784 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:53:26.520  INFO 9784 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:53:27.039  INFO 9784 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:53:27.046  INFO 9784 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.639 seconds (JVM running for 5.375)
+2020-08-19 10:53:34.810  INFO 9784 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 10:53:34.810  INFO 9784 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 10:53:34.818  INFO 9784 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-08-19 10:55:03.990  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 4404 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:55:03.992 DEBUG 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:55:03.992  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:55:04.028  INFO 4404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 10:55:04.029  INFO 4404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 10:55:05.378  INFO 4404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:55:05.429  INFO 4404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 5 JPA repository interfaces.
+2020-08-19 10:55:05.526  WARN 4404 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:55:05.996  INFO 4404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:55:06.003  INFO 4404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:55:06.003  INFO 4404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:55:06.066  INFO 4404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:55:06.066  INFO 4404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2037 ms
+2020-08-19 10:55:06.110  INFO 4404 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:55:06.198  INFO 4404 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 10:55:06.288  INFO 4404 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:55:06.321  INFO 4404 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:55:06.351  INFO 4404 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 10:55:06.432  INFO 4404 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 10:55:06.441  WARN 4404 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:55:06.681  INFO 4404 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:55:06.697  INFO 4404 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:55:07.010  INFO 4404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:55:07.046  INFO 4404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:55:07.047  INFO 4404 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:55:07.550  INFO 4404 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:55:07.555  INFO 4404 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:55:08.079  INFO 4404 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:55:08.086  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.503 seconds (JVM running for 5.191)
+2020-08-19 10:55:12.571  INFO 4404 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 10:55:12.572  INFO 4404 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 10:55:12.581  INFO 4404 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-08-19 10:56:33.794 ERROR 4404 --- [http-nio-80-exec-2] c.m.b.h.ControllerExecptionHandler       : Requst URL : http://localhost/admin/blogs/75/delete，Exception : {}
+
+org.springframework.dao.EmptyResultDataAccessException: No class com.mehow.blog.entity.Blog entity with id 75 exists!
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.lambda$deleteById$0(SimpleJpaRepository.java:176)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById(SimpleJpaRepository.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy137.deleteById(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at com.sun.proxy.$Proxy79.deleteById(Unknown Source)
+	at com.mehow.blog.service.impl.BlogServiceImpl.deleteBlog(BlogServiceImpl.java:153)
+	at com.mehow.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$ec01d9c7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.mehow.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$429a535b.deleteBlog(<generated>)
+	at com.mehow.blog.controller.admin.BlogController.delete(BlogController.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-08-19 10:56:33.795  WARN 4404 --- [http-nio-80-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.EmptyResultDataAccessException: No class com.mehow.blog.entity.Blog entity with id 75 exists!]
+2020-08-19 10:57:54.833  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@72a97652]}
+2020-08-19 10:57:54.834  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:57:55.119  WARN 4404 --- [http-nio-80-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 10:57:55.144  WARN 4404 --- [http-nio-80-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 10:57:55.181  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 10:57:55.181  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:24.438  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/about, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.AboutShowController.about', args=[]}
+2020-08-19 10:58:24.438  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:24.441  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Result:{}---->>about
+2020-08-19 10:58:24.441  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:26.787  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 10:58:26.787  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:26.962  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 10:58:26.962  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:28.965  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 10:58:28.966  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:29.169  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 10:58:29.169  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:30.854  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/types/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 10:58:30.854  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:30.947  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Result:{}---->>types
+2020-08-19 10:58:30.948  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:32.836  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@72a97652]}
+2020-08-19 10:58:32.837  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:58:33.029  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 10:58:33.030  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:59:30.528  INFO 4404 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:59:30.532  INFO 4404 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:59:30.541  INFO 4404 --- [Thread-12] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-08-19 10:59:30.880  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 4404 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 10:59:30.881 DEBUG 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 10:59:30.881  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 10:59:32.195  INFO 4404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 10:59:32.233  INFO 4404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 5 JPA repository interfaces.
+2020-08-19 10:59:32.292  WARN 4404 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 10:59:32.522  INFO 4404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 10:59:32.522  INFO 4404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 10:59:32.522  INFO 4404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 10:59:32.541  INFO 4404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 10:59:32.541  INFO 4404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1655 ms
+2020-08-19 10:59:32.575  INFO 4404 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 10:59:32.640  INFO 4404 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-08-19 10:59:32.752  INFO 4404 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 10:59:32.772  INFO 4404 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 10:59:32.937  WARN 4404 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 10:59:32.946  INFO 4404 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 10:59:33.236  INFO 4404 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 10:59:33.637  INFO 4404 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 10:59:33.637  INFO 4404 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 10:59:33.669  INFO 4404 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 10:59:33.694  INFO 4404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 10:59:33.696  INFO 4404 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 10:59:33.761  INFO 4404 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 10:59:33.762  INFO 4404 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 10:59:33.832  INFO 4404 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 70 ms
+2020-08-19 10:59:33.835  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 10:59:33.836  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 10:59:34.069  INFO 4404 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 10:59:34.072  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 3.282 seconds (JVM running for 271.175)
+2020-08-19 10:59:34.073  INFO 4404 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-19 10:59:34.236  WARN 4404 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 10:59:34.254  WARN 4404 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 10:59:34.283  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 10:59:34.284  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:00:07.521  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:00:07.522  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:00:07.731  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:00:07.732  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:00:10.719  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:00:10.719  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:00:10.906  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:00:10.906  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:01:14.794  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:01:14.795  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:01:15.002  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:01:15.002  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:02:08.672  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:02:08.673  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:02:08.863  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:02:08.864  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:02:45.033  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:02:45.033  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:02:45.231  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:02:45.232  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:38.566  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:04:38.566  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:38.789  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:04:38.789  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:41.178  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:04:41.178  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:41.369  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:04:41.370  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:44.250  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:04:44.250  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:44.431  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:04:44.431  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:46.850  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:04:46.850  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:04:47.049  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:04:47.049  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:05:40.167  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:05:40.167  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:05:40.359  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:05:40.359  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:05:50.279  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@6ae2fe7c]}
+2020-08-19 11:05:50.279  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:05:50.478  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:05:50.478  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:06.705  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/types/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:06:06.705  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:06.815  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Result:{}---->>types
+2020-08-19 11:06:06.816  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:10.156  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:06:10.156  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:10.288  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:06:10.289  INFO 4404 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:34.825  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 11:06:34.825  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:35.022  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 11:06:35.023  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:38.208  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/about, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.AboutShowController.about', args=[]}
+2020-08-19 11:06:38.208  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:38.216  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>about
+2020-08-19 11:06:38.218  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:53.400  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@6ae2fe7c]}
+2020-08-19 11:06:53.400  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:06:53.604  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:06:53.605  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:00.699  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/types/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:07:00.700  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:00.802  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Result:{}---->>types
+2020-08-19 11:07:00.802  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:04.925  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:07:04.925  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:05.051  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:07:05.051  INFO 4404 --- [http-nio-80-exec-2] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:11.436  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 11:07:11.436  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:11.618  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 11:07:11.618  INFO 4404 --- [http-nio-80-exec-10] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:15.946  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/types/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:07:15.947  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:16.051  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Result:{}---->>types
+2020-08-19 11:07:16.052  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:18.886  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:07:18.887  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:07:19.119  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:07:19.119  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:17.324  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@6ae2fe7c]}
+2020-08-19 11:09:17.324  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:17.535  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:09:17.535  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:21.182  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/types/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:09:21.182  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:21.282  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Result:{}---->>types
+2020-08-19 11:09:21.283  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:26.294  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:09:26.295  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:26.420  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:09:26.421  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:28.186  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:09:28.187  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:09:28.311  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:09:28.311  INFO 4404 --- [http-nio-80-exec-8] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:14:46.594  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 11:14:46.594  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:14:46.802  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 11:14:46.803  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:14:46.938  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 11:14:46.939  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:14:47.131  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 11:14:47.131  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:14:57.677  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/about, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.AboutShowController.about', args=[]}
+2020-08-19 11:14:57.678  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:14:57.678  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Result:{}---->>about
+2020-08-19 11:14:57.678  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:15:37.323  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 11:15:37.324  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:15:37.508  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 11:15:37.509  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:15:46.213  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:15:46.214  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:15:46.338  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:15:46.339  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:16:00.406  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/types/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:16:00.406  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:16:00.510  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Result:{}---->>types
+2020-08-19 11:16:00.510  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:17:20.266  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:17:20.266  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:17:20.398  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:17:20.399  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:18:21.444  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 11:18:21.444  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:18:21.644  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 11:18:21.644  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:18:30.011  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@6ae2fe7c]}
+2020-08-19 11:18:30.012  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:18:30.227  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:18:30.228  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:36.003  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:20:36.004  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:36.212  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:20:36.213  INFO 4404 --- [http-nio-80-exec-5] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:54.084  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/types/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:20:54.085  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:54.179  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : Result:{}---->>types
+2020-08-19 11:20:54.179  INFO 4404 --- [http-nio-80-exec-7] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:56.114  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/tags/-1, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-08-19 11:20:56.114  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:56.230  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : Result:{}---->>tags
+2020-08-19 11:20:56.230  INFO 4404 --- [http-nio-80-exec-3] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:58.551  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/archives, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.ArchiveShowController.archives', args=[{}]}
+2020-08-19 11:20:58.552  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:20:58.719  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>archives
+2020-08-19 11:20:58.720  INFO 4404 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:21:00.737  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/about, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.AboutShowController.about', args=[]}
+2020-08-19 11:21:00.737  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:21:00.737  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Result:{}---->>about
+2020-08-19 11:21:00.737  INFO 4404 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:21:02.388  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@3570f9bc]}
+2020-08-19 11:21:02.389  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:21:02.580  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:21:02.580  INFO 4404 --- [http-nio-80-exec-4] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:21:59.940  INFO 4404 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:21:59.940  INFO 4404 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:21:59.941  INFO 4404 --- [Thread-21] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2020-08-19 11:22:00.139  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 4404 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 11:22:00.139 DEBUG 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 11:22:00.139  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 11:22:01.233  INFO 4404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 11:22:01.260  INFO 4404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 5 JPA repository interfaces.
+2020-08-19 11:22:01.288  WARN 4404 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 11:22:01.428  INFO 4404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 11:22:01.429  INFO 4404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 11:22:01.429  INFO 4404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 11:22:01.442  INFO 4404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 11:22:01.443  INFO 4404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1301 ms
+2020-08-19 11:22:01.459  INFO 4404 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 11:22:01.487  INFO 4404 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2020-08-19 11:22:01.573  INFO 4404 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:22:01.586  INFO 4404 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 11:22:01.706  WARN 4404 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 11:22:01.726  INFO 4404 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 11:22:01.909  INFO 4404 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 11:22:02.161  INFO 4404 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 11:22:02.162  INFO 4404 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:22:02.199  INFO 4404 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 11:22:02.221  INFO 4404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 11:22:02.221  INFO 4404 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 11:22:02.648  INFO 3980 --- [main] com.mehow.blog.BlogApplicationTests      : Starting BlogApplicationTests on MHPC701109 with PID 3980 (started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 11:22:02.649 DEBUG 3980 --- [main] com.mehow.blog.BlogApplicationTests      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 11:22:02.650  INFO 3980 --- [main] com.mehow.blog.BlogApplicationTests      : The following profiles are active: cynosDB
+2020-08-19 11:22:02.717  INFO 4404 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 11:22:02.720  INFO 4404 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 2.618 seconds (JVM running for 1619.789)
+2020-08-19 11:22:02.721  INFO 4404 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-19 11:22:04.205  INFO 3980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 11:22:04.271  INFO 3980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 5 JPA repository interfaces.
+2020-08-19 11:22:04.375  WARN 3980 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 11:22:04.756  INFO 3980 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 11:22:04.992  INFO 3980 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 11:22:05.192  INFO 3980 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:22:05.266  INFO 3980 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 11:22:05.318  INFO 3980 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 11:22:05.480  INFO 3980 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 11:22:05.799  WARN 3980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 11:22:06.330  INFO 3980 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 11:22:06.446  INFO 3980 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 11:22:07.168  INFO 3980 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories��
+2020-08-19 11:22:07.775  INFO 3980 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 11:22:07.786  INFO 3980 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:22:08.423  INFO 3980 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 11:22:08.434  INFO 3980 --- [main] com.mehow.blog.BlogApplicationTests      : Started BlogApplicationTests in 6.36 seconds (JVM running for 7.524)
+2020-08-19 11:22:08.589  INFO 3980 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:22:08.592  INFO 3980 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:22:08.601  INFO 3980 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-08-19 11:23:06.692  INFO 17460 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 17460 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 11:23:06.694 DEBUG 17460 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 11:23:06.694  INFO 17460 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 11:23:06.734  INFO 17460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 11:23:06.734  INFO 17460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 11:23:08.119  INFO 17460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 11:23:08.182  INFO 17460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 5 JPA repository interfaces.
+2020-08-19 11:23:08.320  WARN 17460 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 11:23:08.910  INFO 17460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https)
+2020-08-19 11:23:08.916  INFO 17460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 11:23:08.917  INFO 17460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 11:23:08.982  INFO 17460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 11:23:08.982  INFO 17460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2248 ms
+2020-08-19 11:23:09.028  INFO 17460 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 11:23:09.130  INFO 17460 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 11:23:09.221  INFO 17460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:23:09.254  INFO 17460 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 11:23:09.287  INFO 17460 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 11:23:09.369  INFO 17460 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 11:23:09.376  WARN 17460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 11:23:09.613  INFO 17460 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 11:23:09.626  INFO 17460 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 11:23:09.943  INFO 17460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 11:23:10.311  INFO 17460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (https) with context path ''
+2020-08-19 11:23:10.312  INFO 17460 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 11:23:10.489  INFO 17460 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 11:23:10.495  INFO 17460 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:23:11.022  INFO 17460 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 11:23:11.029  INFO 17460 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.757 seconds (JVM running for 5.477)
+2020-08-19 11:23:21.116  INFO 15708 --- [main] com.mehow.blog.BlogApplicationTests      : Starting BlogApplicationTests on MHPC701109 with PID 15708 (started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 11:23:21.116 DEBUG 15708 --- [main] com.mehow.blog.BlogApplicationTests      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 11:23:21.117  INFO 15708 --- [main] com.mehow.blog.BlogApplicationTests      : The following profiles are active: cynosDB
+2020-08-19 11:23:22.524  INFO 15708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 11:23:22.591  INFO 15708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 5 JPA repository interfaces.
+2020-08-19 11:23:22.689  WARN 15708 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 11:23:23.062  INFO 15708 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 11:23:23.246  INFO 15708 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 11:23:23.432  INFO 15708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:23:23.516  INFO 15708 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 11:23:23.585  INFO 15708 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 11:23:23.737  INFO 15708 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 11:23:24.000  WARN 15708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 11:23:24.383  INFO 15708 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 11:23:24.489  INFO 15708 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 11:23:25.165  INFO 15708 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories��
+2020-08-19 11:23:25.757  INFO 15708 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 11:23:25.765  INFO 15708 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:23:26.379  INFO 15708 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 11:23:26.387  INFO 15708 --- [main] com.mehow.blog.BlogApplicationTests      : Started BlogApplicationTests in 5.642 seconds (JVM running for 6.44)
+2020-08-19 11:23:26.506  INFO 15708 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:23:26.509  INFO 15708 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:23:26.520  INFO 15708 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-08-19 11:44:18.704  INFO 4216 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 4216 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 11:44:18.707 DEBUG 4216 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 11:44:18.707  INFO 4216 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 11:44:18.769  INFO 4216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 11:44:18.769  INFO 4216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 11:44:20.223  INFO 4216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 11:44:20.275  INFO 4216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 5 JPA repository interfaces.
+2020-08-19 11:44:20.386  WARN 4216 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 11:44:20.897  INFO 4216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https)
+2020-08-19 11:44:20.904  INFO 4216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 11:44:20.904  INFO 4216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 11:44:20.965  INFO 4216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 11:44:20.966  INFO 4216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2197 ms
+2020-08-19 11:44:21.010  INFO 4216 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 11:44:21.110  INFO 4216 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 11:44:21.211  INFO 4216 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:44:21.245  INFO 4216 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 11:44:21.277  INFO 4216 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 11:44:21.361  INFO 4216 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 11:44:21.368  WARN 4216 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 11:44:21.646  INFO 4216 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 11:44:21.673  INFO 4216 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 11:44:22.012  INFO 4216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 11:44:22.412  INFO 4216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (https) with context path ''
+2020-08-19 11:44:22.413  INFO 4216 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 11:44:22.642  INFO 4216 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 11:44:22.647  INFO 4216 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:44:23.221  INFO 4216 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 11:44:23.229  INFO 4216 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 5.009 seconds (JVM running for 5.757)
+2020-08-19 11:44:54.782  INFO 5192 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 5192 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 11:44:54.784 DEBUG 5192 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 11:44:54.785  INFO 5192 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 11:44:54.826  INFO 5192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 11:44:54.826  INFO 5192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 11:44:56.232  INFO 5192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 11:44:56.285  INFO 5192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 5 JPA repository interfaces.
+2020-08-19 11:44:56.381  WARN 5192 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 11:44:56.861  INFO 5192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 11:44:56.912  INFO 5192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 11:44:56.912  INFO 5192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 11:44:56.979  INFO 5192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 11:44:56.980  INFO 5192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2154 ms
+2020-08-19 11:44:57.025  INFO 5192 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 11:44:57.125  INFO 5192 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 11:44:57.216  INFO 5192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:44:57.250  INFO 5192 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 11:44:57.282  INFO 5192 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 11:44:57.368  INFO 5192 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 11:44:57.384  WARN 5192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 11:44:57.607  INFO 5192 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 11:44:57.627  INFO 5192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 11:44:57.972  INFO 5192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 11:44:58.010  INFO 5192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 11:44:58.012  INFO 5192 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 11:44:58.500  INFO 5192 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 11:44:58.506  INFO 5192 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 11:44:59.029  INFO 5192 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 11:44:59.036  INFO 5192 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.669 seconds (JVM running for 5.416)
+2020-08-19 11:45:00.959  INFO 5192 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 11:45:00.959  INFO 5192 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 11:45:00.966  INFO 5192 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-08-19 11:45:00.996  INFO 5192 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@737cffae]}
+2020-08-19 11:45:00.996  INFO 5192 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 11:45:01.195  WARN 5192 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 11:45:01.217  WARN 5192 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 11:45:01.254  INFO 5192 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 11:45:01.254  INFO 5192 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 17:01:37.049  INFO 11920 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 11920 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 17:01:37.051 DEBUG 11920 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 17:01:37.051  INFO 11920 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 17:01:37.078  INFO 11920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 17:01:37.078  INFO 11920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 17:01:38.407  INFO 11920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 17:01:38.456  INFO 11920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 5 JPA repository interfaces.
+2020-08-19 17:01:38.545  WARN 11920 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 17:01:38.994  INFO 11920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 17:01:39.000  INFO 11920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 17:01:39.001  INFO 11920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 17:01:39.060  INFO 11920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 17:01:39.061  INFO 11920 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1983 ms
+2020-08-19 17:01:39.101  INFO 11920 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 17:01:39.185  INFO 11920 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 17:01:39.267  INFO 11920 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 17:01:39.298  INFO 11920 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 17:01:39.325  INFO 11920 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 17:01:39.395  INFO 11920 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 17:01:39.400  WARN 11920 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 17:01:39.617  INFO 11920 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 17:01:39.634  INFO 11920 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-19 17:01:39.906  INFO 11920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 17:01:39.937  INFO 11920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 17:01:39.939  INFO 11920 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 17:01:40.452  INFO 11920 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-19 17:01:40.456  INFO 11920 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-19 17:01:40.915  INFO 11920 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-19 17:01:40.921  INFO 11920 --- [restartedMain] com.mehow.blog.BlogApplication           : Started BlogApplication in 4.221 seconds (JVM running for 5.147)
+2020-08-19 17:01:46.172  INFO 11920 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 17:01:46.172  INFO 11920 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 17:01:46.178  INFO 11920 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-08-19 17:01:46.203  INFO 11920 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@d11bc5a]}
+2020-08-19 17:01:46.203  INFO 11920 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 17:01:46.400  WARN 11920 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 17:01:46.422  WARN 11920 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-19 17:01:46.452  INFO 11920 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : Result:{}---->>index
+2020-08-19 17:01:46.452  INFO 11920 --- [http-nio-80-exec-1] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 17:01:47.770  INFO 11920 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/about, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.AboutShowController.about', args=[]}
+2020-08-19 17:01:47.771  INFO 11920 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 17:01:47.773  INFO 11920 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : Result:{}---->>about
+2020-08-19 17:01:47.773  INFO 11920 --- [http-nio-80-exec-9] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 17:02:49.226  INFO 11920 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Request:{}RequestLog{url=http://localhost/about, ip='0:0:0:0:0:0:0:1', classMehod='com.mehow.blog.controller.AboutShowController.about', args=[]}
+2020-08-19 17:02:49.226  INFO 11920 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 17:02:49.226  INFO 11920 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : Result:{}---->>about
+2020-08-19 17:02:49.226  INFO 11920 --- [http-nio-80-exec-6] com.mehow.blog.aspect.LogAspect          : ====-------------------doBefor-------------
+2020-08-19 17:50:50.709  INFO 6352 --- [restartedMain] com.mehow.blog.BlogApplication           : Starting BlogApplication on MHPC701109 with PID 6352 (D:\work\java\springboot\blog-jpa\target\classes started by mehow in D:\work\java\springboot\blog-jpa)
+2020-08-19 17:50:50.712 DEBUG 6352 --- [restartedMain] com.mehow.blog.BlogApplication           : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-19 17:50:50.712  INFO 6352 --- [restartedMain] com.mehow.blog.BlogApplication           : The following profiles are active: cynosDB
+2020-08-19 17:50:50.741  INFO 6352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-19 17:50:50.742  INFO 6352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-19 17:50:51.968  INFO 6352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-19 17:50:52.016  INFO 6352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 5 JPA repository interfaces.
+2020-08-19 17:50:52.117  WARN 6352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.mehow.blog]' package. Please check your configuration.
+2020-08-19 17:50:52.513  INFO 6352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-19 17:50:52.555  INFO 6352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-19 17:50:52.556  INFO 6352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-19 17:50:52.614  INFO 6352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-19 17:50:52.614  INFO 6352 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1872 ms
+2020-08-19 17:50:52.653  INFO 6352 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-08-19 17:50:52.735  INFO 6352 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-08-19 17:50:52.811  INFO 6352 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 17:50:52.839  INFO 6352 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-19 17:50:52.866  INFO 6352 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-19 17:50:52.937  INFO 6352 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-19 17:50:52.941  WARN 6352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-19 17:50:53.149  INFO 6352 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-19 17:50:53.436  INFO 6352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-19 17:50:53.469  INFO 6352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-19 17:50:53.471  INFO 6352 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-19 17:51:01.700  INFO 6352 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-19 17:51:01.700  INFO 6352 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-19 17:51:03.037 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+
+2020-08-19 17:51:13.046 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+
+2020-08-19 17:51:23.556 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+
+2020-08-19 17:51:34.067 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+
+2020-08-19 17:51:44.587 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+
+2020-08-19 17:51:55.100 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor40.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+
+2020-08-19 17:52:05.609 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor40.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+
+2020-08-19 17:52:16.119 ERROR 6352 --- [Druid-ConnectionPool-Create-1084148345] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT, errorCode 0, state 08001
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2570)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor40.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+

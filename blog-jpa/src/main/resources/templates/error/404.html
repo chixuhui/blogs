@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="include :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404错误</title>
+</head>
+
+<body>
+<!--导航 动态传入值-->
+<div th:replace="include :: menu(7)"></div>
+<br>
+<div class="main-content m-container-small m-padded-tb-massive">
+    <div class="ui error message m-padded-tb-huge">
+        <div class="ui contianer">
+            <h1><b>404</b></h1>
+            <h1><b><p>对不起，你访问的资源不存在</p></b></h1>
+        </div>
+    </div>
+</div>
+<!--底部 footer-->
+<div th:replace="include :: footer"></div>
+<th:block th:replace="include :: script"></th:block>
+</body>
+</html>
